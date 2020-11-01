@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>servicios.Conexion</OriginalElement>
+  <nodes>
+    <node x="1253.0" y="1303.0">controlador.ProductoCtrl</node>
+    <node x="311.0" y="1828.0">modelo.Empresa</node>
+    <node x="2143.0" y="1568.0">modelo.Producto</node>
+    <node x="491.0" y="2017.0">controlDAO.UsuarioJDBC</node>
+    <node x="756.0" y="2017.0">modelo.Usuario</node>
+    <node x="846.0000000000001" y="1292.0">controlador.OrdenCtrl</node>
+    <node x="1363.0" y="1568.0">controlDAO.ProductoJDBC</node>
+    <node x="1612.0" y="1568.0">servicios.Conexion</node>
+    <node x="1878.0" y="1568.0">controlDAO.ItemOrdenJDBC</node>
+    <node x="1675.0" y="1347.0">controlador.LoginCtrl</node>
+    <node x="0.0" y="2017.0">modelo.ItemOrden</node>
+    <node x="837.7500000000001" y="11.0">javax.servlet.ServletConfig</node>
+    <node x="1001.5000000000001" y="630.0">javax.servlet.http.HttpServlet</node>
+    <node x="420.0000000000001" y="1303.0">controlador.IndividualCtrl</node>
+    <node x="1281.75" y="0.0">javax.servlet.Servlet</node>
+    <node x="184.75" y="1568.0">modelo.Cliente</node>
+    <node x="1117.75" y="56.5">java.io.Serializable</node>
+    <node x="2096.0" y="0.0">controlDAO.ClienteJDBC</node>
+    <node x="781.5000000000001" y="785.0">javax.servlet.annotation.WebServlet</node>
+    <node x="1164.0" y="2017.0">otros.DataSistema</node>
+    <node x="1052.0" y="193.0">javax.servlet.GenericServlet</node>
+    <node x="969.0" y="2017.0">servicios.prueba</node>
+    <node x="0.0" y="1839.0">modelo.Individual</node>
+    <node x="1127.0" y="1568.0">controlDAO.OrdenJDBC</node>
+    <node x="0.0" y="1303.0">controlador.EmpresaCtrl</node>
+    <node x="229.0" y="2017.0">otros.Utilerias</node>
+    <node x="660.0" y="1568.0">modelo.Orden</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="controlador.ProductoCtrl" target="javax.servlet.http.HttpServlet">
+      <point x="100.5" y="-104.5" />
+      <point x="1554.5" y="1232.0" />
+      <point x="1275.9" y="1232.0" />
+      <point x="78.39999999999998" y="281.0" />
+    </edge>
+    <edge source="controlador.OrdenCtrl" target="javax.servlet.annotation.WebServlet">
+      <point x="-96.75" y="-115.5" />
+      <point x="942.7500000000001" y="1252.0" />
+      <point x="881.5000000000001" y="1252.0" />
+      <point x="0.0" y="126.0" />
+    </edge>
+    <edge source="controlador.IndividualCtrl" target="javax.servlet.annotation.WebServlet">
+      <point x="-101.5" y="-104.5" />
+      <point x="521.5000000000001" y="1252.0" />
+      <point x="841.5000000000001" y="1252.0" />
+      <point x="-40.0" y="126.0" />
+    </edge>
+    <edge source="controlador.IndividualCtrl" target="javax.servlet.http.HttpServlet">
+      <point x="101.5" y="-104.5" />
+      <point x="724.5000000000001" y="1272.0" />
+      <point x="1119.1000000000001" y="1272.0" />
+      <point x="-78.39999999999998" y="281.0" />
+    </edge>
+    <edge source="modelo.Individual" target="modelo.Cliente">
+      <point x="0.0" y="-61.0" />
+      <point x="145.5" y="1803.0" />
+      <point x="244.5" y="1803.0" />
+      <point x="-59.75" y="105.0" />
+    </edge>
+    <edge source="controlador.OrdenCtrl" target="javax.servlet.http.HttpServlet">
+      <point x="96.75" y="-115.5" />
+      <point x="1136.25" y="1272.0" />
+      <point x="1197.5" y="1272.0" />
+      <point x="0.0" y="281.0" />
+    </edge>
+    <edge source="controlador.EmpresaCtrl" target="javax.servlet.annotation.WebServlet">
+      <point x="-100.0" y="-104.5" />
+      <point x="100.0" y="1242.0" />
+      <point x="801.5000000000001" y="1242.0" />
+      <point x="-80.0" y="126.0" />
+    </edge>
+    <edge source="controlador.LoginCtrl" target="javax.servlet.annotation.WebServlet">
+      <point x="-94.0" y="-60.5" />
+      <point x="1769.0" y="1222.0" />
+      <point x="961.5000000000001" y="1222.0" />
+      <point x="80.0" y="126.0" />
+    </edge>
+    <edge source="modelo.Empresa" target="modelo.Cliente">
+      <point x="0.0" y="-72.0" />
+      <point x="463.0" y="1803.0" />
+      <point x="364.0" y="1803.0" />
+      <point x="59.75" y="105.0" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="java.io.Serializable">
+      <point x="0.0" y="-193.5" />
+      <point x="1197.5" y="168.0" />
+      <point x="1189.75" y="168.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="controlador.ProductoCtrl" target="javax.servlet.annotation.WebServlet">
+      <point x="-100.5" y="-104.5" />
+      <point x="1353.5" y="1242.0" />
+      <point x="921.5000000000001" y="1242.0" />
+      <point x="40.0" y="126.0" />
+    </edge>
+    <edge source="javax.servlet.http.HttpServlet" target="javax.servlet.GenericServlet">
+      <point x="0.0" y="-281.0" />
+      <point x="0.0" y="193.5" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="javax.servlet.Servlet">
+      <point x="97.0" y="-193.5" />
+      <point x="1294.5" y="168.0" />
+      <point x="1427.25" y="168.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="javax.servlet.ServletConfig">
+      <point x="-97.0" y="-193.5" />
+      <point x="1100.5" y="168.0" />
+      <point x="967.7500000000001" y="168.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="controlador.LoginCtrl" target="javax.servlet.http.HttpServlet">
+      <point x="94.0" y="-60.5" />
+      <point x="1957.0" y="1212.0" />
+      <point x="1354.3000000000002" y="1212.0" />
+      <point x="156.79999999999995" y="281.0" />
+    </edge>
+    <edge source="controlador.EmpresaCtrl" target="javax.servlet.http.HttpServlet">
+      <point x="100.0" y="-104.5" />
+      <point x="300.0" y="1262.0" />
+      <point x="1040.7000000000003" y="1262.0" />
+      <point x="-156.79999999999995" y="281.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4178082191780823" x="974.857220848045" y="227.80327868852441" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

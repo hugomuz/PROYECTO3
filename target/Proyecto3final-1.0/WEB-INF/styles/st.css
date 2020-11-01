@@ -1,0 +1,42 @@
+body{
+    background-image: url("../img/img/fondo.jpg");
+    
+    
+}
+.titulo{
+margin: 10px auto 20px 15%;
+padding: 0;
+text-transform: uppercase;
+font-weight: 100;
+}
+.nuevo {                
+margin-left: 10% auto 30px 10%;
+}
+.item{
+display: flex;
+margin: 40px auto 20px 2%;
+padding: 25px;
+}
+h4{
+text-transform: uppercase;
+font-weight: 700;
+}
+.cuerpo{
+    box-sizing: border-box;
+    border: solid while;
+    color: blue;
+    margin: 0 10% 5% 10%;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: 80px;
+    text-align:center;
+    padding: 30px;
+    padding-left: 30px;
+}
+
+.formulario{
+    margin-left:350px;
+    margin-top: 30px;
+    border: blueviolet 15px solid;
+}
