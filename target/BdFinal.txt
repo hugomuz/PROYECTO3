@@ -1,0 +1,71 @@
+create table usuario (
+	id serial not null, 
+	usuario VARCHAR,
+	clave VARCHAR
+);
+ALTER TABLE usuario ADD CONSTRAINT usuario_pk PRIMARY KEY ( id );
+
+CREATE TABLE cliente (
+    id             serial not null,
+    nombre         VARCHAR, 
+    telefono       VARCHAR,
+    direccion      VARCHAR,
+    dpi            VARCHAR,
+    contacto       VARCHAR, 
+    descuento      INTEGER,
+    tipo_cliente   VARCHAR 
+);
+ALTER TABLE cliente ADD CONSTRAINT cliente_pk PRIMARY KEY ( id );
+
+CREATE TABLE orden (
+    id             serial,
+    id_cliente     INTEGER,
+    fecha          DATE,
+    precio_envio   numeric,
+    tipo_envio     VARCHAR,
+    estado         VARCHAR,
+    itemUno	   VARCHAR,
+    itemDos          VARCHAR,	 
+    total          numeric,
+    dias_envio     INTEGER
+);
+
+ALTER TABLE orden ADD CONSTRAINT ordeb_pk PRIMARY KEY ( id );
+
+
+CREATE TABLE producto (
+    id            serial,
+    nombre        VARCHAR,
+    descripcion   VARCHAR,
+    precio        INTEGER,
+    cantidad      INTEGER
+);
+
+ALTER TABLE producto ADD CONSTRAINT producto_pk PRIMARY KEY ( id );
+
+CREATE TABLE itemOrden (
+    id            VARCHAR,
+    cantidad      INTEGER,
+    id_producto	  INTEGER 
+);
+
+ALTER TABLE itemOrden ADD CONSTRAINT itemOrden_pk PRIMARY KEY ( id );
+
+
+
+ALTER TABLE itemorden
+    ADD CONSTRAINT itemorden_orden_fk FOREIGN KEY ( id_producto )
+        REFERENCES producto ( id );
+
+ALTER TABLE orden
+    ADD CONSTRAINT itemuno_orden_fk FOREIGN KEY (itemuno)
+        REFERENCES itemOrden ( id );
+
+ALTER TABLE orden
+    ADD CONSTRAINT itemuno_orden_fk FOREIGN KEY (itemuno)
+        REFERENCES itemOrden ( id );
+
+	ALTER TABLE orden
+    ADD CONSTRAINT cliente_orden_fk FOREIGN KEY ( id_cliente )
+        REFERENCES cliente ( id );
+
